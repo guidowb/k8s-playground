@@ -1,0 +1,4 @@
+## Append samples you want in your CSV to this file as resources ##
+resources:
+- tsmgr_v1_serviceclaim.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples

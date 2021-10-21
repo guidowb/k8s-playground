@@ -1,0 +1,11 @@
+domain: vmware.com
+layout: go.kubebuilder.io/v2
+projectName: service-claim
+repo: github.com/cf-platform-eng/service-claim
+resources:
+- group: tsmgr
+  kind: ServiceClaim
+  version: v1
+version: 3-alpha
+plugins:
+  go.sdk.operatorframework.io/v2-alpha: {}

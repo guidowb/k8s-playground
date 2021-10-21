@@ -1,0 +1,7 @@
+apiVersion: tsmgr.vmware.com/v1
+kind: ServiceClaim
+metadata:
+  name: serviceclaim-sample
+spec:
+  # Add fields here
+  foo: bar

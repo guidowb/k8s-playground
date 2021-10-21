@@ -1,0 +1,24 @@
+# permissions for end users to edit serviceclaims.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: serviceclaim-editor-role
+rules:
+- apiGroups:
+  - tsmgr.vmware.com
+  resources:
+  - serviceclaims
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - tsmgr.vmware.com
+  resources:
+  - serviceclaims/status
+  verbs:
+  - get
